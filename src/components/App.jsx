@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 
 
 const App = () => {
-    const[time, setTime] = useState(new Date().toDateString())
+    const [time, setTime] = useState(new Date().toDateString())
     const [username, setUserName] = useState('');
     const [thoughts, setThoughts] = useState('');
     const [chirps, setChirps] = useState([
         {
-            username: 'Maggie: ',
+            username: 'Maggie ',
             thoughts: 'Yo Josh!',
             time: time
         },
         {
-            username: 'Josh: ',
+            username: 'Josh ',
             thoughts: 'Today is the Day!',
             time: time
         },
         {
-            username: 'Maggie: ',
+            username: 'Maggie ',
             thoughts: 'Today is not the Day Josh.',
             time: time
         }
@@ -40,7 +40,7 @@ const App = () => {
     })
 
     const handleBtnClick = e => {
-        
+
         e.preventDefault();
         console.log(username, thoughts);
         setChirps([...chirps, {
@@ -65,7 +65,7 @@ const App = () => {
                 </div>
             </form>
 
-            <main className="container mt-5">
+            <main className="container mt-3 mb-5">
                 <section className="row">
                     <div className="col-md-4">
                         <ul className="list-group">
@@ -83,8 +83,9 @@ export default App;
 
 
 
-        
-    
+
+
+
 
 
 
